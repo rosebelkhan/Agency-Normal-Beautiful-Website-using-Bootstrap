@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Agency Website Using Bootstrap</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<!-- font awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- pagintaion -->
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<!-- custom css -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+
+<header>	
+	<nav class="navbar navbar-expand-lg py-3 fixed-top bg">
+		<div class="container">
+		  <a class="navbar-brand" href="#">ROSE</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <i class="fa fa-bars"></i>
+		  </button>
+
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="navbar-nav ml-auto float-right text-right">
+		      <li class="nav-item">
+		        <a class="nav-link ml-5" href="#home">Home</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link ml-5" href="#project">Our Service</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link ml-5" href="#team">About Us</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link ml-5" href="#contact">Contact</a>
+		      </li>
+		    </ul>
+		  </div>
+		</div>
+	</nav>
+</header>
+
+<!-- Hero section -->
+
+<section id="home">
+	<video controls="" autoplay="" muted="" loop="">
+		<source src="video/video.mp4" type="video/mp4">
+	</video>
+
+	<div class="container">
+		<div class="row pt-5">
+			<div class="home-text col-md-8 col-sm-12 mt-5">
+				<h1>Create Your World With Rose.</h1>
+				<p>convert your work into profit with world's men and women.</p>
+				<ul class="section-btn">
+					<a href="#"><span data-hover="Discover More">Discover More</span></a>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="overlay"></div>
+</section>
+
+
+<!-- about section -->
+
+<section id="about">
+	<div class="container py-5">
+		<div class="row py-5 my-5">
+			<div class="about-text text-center py-5 col-md-10 col-sm-12 mx-auto">
+				<h3 class="pb-3">Intruducing Rose</h3>
+				<h1>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</h1>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<!-- project section -->
+
+<section id="project" class="pb-5">
+	<div class="container py-5">
+		<div class="row">
+			<div class="col-md-6 col-sm-6">
+				<div class="project-item">
+					<a href="img/project-image1.jpg">
+						<img src="img/project-image1.jpg" class="img-fluid">
+						<div class="project-overlay">
+							<div class="project-info text-center">
+								<h1>Beautiful Women</h1>
+								<h3>Click to pop up!</h3>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+
+			<div class="col-md-6 col-sm-6">
+				<div class="project-item">
+					<a href="img/project-image2.jpg">
+						<img src="img/project-image2.jpg" class="img-fluid">
+						<div class="project-overlay">
+							<div class="project-info text-center">
+								<h1>Beautiful Women</h1>
+								<h3>Click to pop up!</h3>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+
+			<div class="col-md-6 col-sm-6">
+				<div class="project-item">
+					<a href="img/project-image3.jpg">
+						<img src="img/project-image3.jpg" class="img-fluid">
+						<div class="project-overlay">
+							<div class="project-info text-center">
+								<h1>Beautiful Women</h1>
+								<h3>Click to pop up!</h3>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+
+			<div class="col-md-6 col-sm-6">
+				<div class="project-item">
+					<a href="img/project-image4.jpg">
+						<img src="img/project-image4.jpg" class="img-fluid">
+						<div class="project-overlay">
+							<div class="project-info text-center">
+								<h1>Beautiful Women</h1>
+								<h3>Click to pop up!</h3>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+<!-- team section -->
+
+<section id="team" class="h-100">
+	<div class="container py-5">
+		<h1 class="text-center">Meet Our People</h1>
+		<!-- Swiper -->
+	  <div class="swiper-container py-5">
+	    <div class="swiper-wrapper">
+
+	      <div class="swiper-slide col-lg-3 col-md-6 col-12">
+	      	<img src="img/team4.jpg" class="img-fluid">
+	      	<div class="swipper-text pt-2">
+	      		<h3>John Doe<br><span>Web Developer</span></h3>
+	      	</div>
+	      </div>
+	      <div class="swiper-slide col-lg-3 col-md-6 col-12">
+	      	<img src="img/team3.jpg" class="img-fluid">
+	      	<div class="swipper-text pt-2">
+	      		<h3>Nikola Fonk<br><span>Raw Developer</span></h3>
+	      	</div>
+	      </div>
+	      <div class="swiper-slide col-lg-3 col-md-6 col-12">
+	      	<img src="img/team5.jpg" class="img-fluid">
+	      	<div class="swipper-text pt-2">
+	      		<h3>Yash Min<br><span>Java Developer</span></h3>
+	      	</div>
+	      </div>
+	      <div class="swiper-slide col-lg-3 col-md-6 col-12">
+	      	<img src="img/team3.jpg" class="img-fluid">
+	      	<div class="swipper-text pt-2">
+	      		<h3>Rosee Bella<br><span>Core Developer</span></h3>
+	      	</div>
+	      </div>
+	      <div class="swiper-slide col-lg-3 col-md-6 col-12">
+	      	<img src="img/team4.jpg" class="img-fluid">
+	      	<div class="swipper-text pt-2">
+	      		<h3>Feli Jana<br><span>React Developer</span></h3>
+	      	</div>
+	      </div>
+	      <div class="swiper-slide col-lg-3 col-md-6 col-12">
+	      	<img src="img/team5.jpg" class="img-fluid">
+	      	<div class="swipper-text pt-2">
+	      		<h3>Poly Sultana<br><span>Youtube Manager</span></h3>
+	      	</div>
+	      </div>
+	      <div class="swiper-slide col-lg-3 col-md-6 col-12">
+	      	<img src="img/team3.jpg" class="img-fluid">
+	      	<div class="swipper-text pt-2">
+	      		<h3>Raja Khan<br><span>Social Media</span></h3>
+	      	</div>
+	      </div>
+	      
+	      
+	      
+	    </div>
+	    <!-- Add Arrows -->
+	    <div class="swiper-button-next"></div>
+	    <div class="swiper-button-prev"></div>
+	  </div>
+	</div>
+</section>
+
+<!-- contact section -->
+
+
+<section id="contact" class="h-100 py-5">
+	<h1 class="text-center py-5">Talk To Us</h1>
+		<div class=" col-lg-7 col-md-10 col-11 mx-auto py-5">
+			<form>
+				<div class="form-row">
+
+					<div class="form-group col-md-6">
+						<input type="text" name="" class="form-control" placeholder="name">
+					</div>
+
+					<div class="form-group col-md-6">
+						<input type="email" name="" class="form-control" placeholder="email">
+					</div>
+
+					<div class="form-group col-md-12">
+						<input type="text" name="" class="form-control" placeholder="Subject">
+					</div>
+
+					<div class="form-group col-md-12">
+						<textarea class="form-control" placeholder="Message" rows="3"></textarea>
+					</div>
+
+				</div>
+			</form>
+			<ul class="section-btn text-center">
+				<a href="#"><span data-hover="Send Message">Send Message</span></a>
+			</ul>
+		</div>
+</section>
+
+
+
+<!-- footer section -->
+
+<footer class="py-5">
+	<div class="container py-5">
+		<div class="row">
+			<div class="col-md-5 col-sm-6">
+				<h2 class="py-3">Digital Studio</h2>
+				<p>359 Arapara, savar, Dhaka <br>Pantera Gaushcai Bhola<br>Lorem ipsum dolor<br>Bangladesh</p>
+			</div>
+
+			<div class="col-md-4 col-sm-6">
+				<h2 class="py-3">Keep in touch</h2>
+				<p>0125-1589-212</p>
+				<p>info@gmail.com</p>
+				<p>Our Location</p>
+			</div>
+
+			<div class="col-md-3 col-sm-12">
+				<h2 class="py-3">About Us</h2>
+				<p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
+				<ul class="social-icon list-unstyled d-flex">
+					<li><a href="#"><i class="fa fa-facebook mr-3"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter mr-3"></i></a></li>
+					<li><a href="#"><i class="fa fa-instagram mr-3"></i></a></li>
+					<li><a href="#"><i class="fa fa-pinterest mr-3"></i></a></li>
+					<li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+				</ul>
+			</div>
+
+			<div class="col-md-12 col-12">
+				<div class="copyright-text">
+					<p>Copyright &copy; 2021 Rose | Design By - Rosebel Khan</p>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</footer>
+
+
+
+
+
+<!-- JS file -->
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- pagination slider-->
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- navbar-bg -->
+<script>
+	$(window).scroll(function(){
+		$('nav').toggleClass('scrolled', $(this).scrollTop() > 50)
+	})
+</script>
+
+<!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      slidesPerGroup: 1,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+
+</body>
+</html>

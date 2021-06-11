@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-transform: capitalize;
+}
+html{
+	scroll-behavior: smooth;
+}
+
+/*==============
+Global
+===============*/
+
+h1{
+	font-size: 6.4vw;
+}
+h3{
+	font-family: 'Merriweather', serif;
+	font-size: 1.3rem;
+	font-weight: 700;
+}
+h4{
+	font-size: 1.1rem;
+	font-family: 'Merriweather', serif;
+	font-weight: 700;
+	word-spacing: 0.4vw;
+}
+h6{
+	font-size: 0.9rem;
+	font-weight: 700;
+	color: #6CAA7F;
+}
+p{
+	font-size: 1rem;
+	font-family: 'Karla', sans-serif;
+	line-height: 1.5rem;
+}
+button{
+	background: #6CAA7F;
+	border-style: none;
+	padding: 0.7rem 1.3rem;
+	font-size: 0.9rem;
+	font-weight: 700;
+	letter-spacing: 1px;
+	color: #fff;
+	border-radius: 2px;
+}
+hr{
+	background: #27ae60;
+	color: #27ae60;
+	height: 0.07rem;
+}
+
+
+/*=================
+BODY
+==================*/
+
+
+body{
+	background: #ffff;
+	font-family: 'Sorce Sans Pro', sans-serif;
+}
+
+/*=================
+Typography
+==================*/
+
+h1,h2,h3,h4,h5,h6{
+	font-weight: 300;
+}
+
+h1{
+	font-size: 40px;
+	font-weight: 200;
+	line-height: 50px;
+}
+h2{
+	font-size: 30px;
+	line-height: 40px;
+	margin-top: 0;
+}
+h3{
+	font-size: 20px;
+	font-weight: bolder;
+}
+h4{
+	color: #505050;
+	font-size: 18px;
+	line-height: 28px;
+}
+h5{
+
+}
+h6{
+
+}
+p{
+	color: #757575;
+	font-size: 16px;
+	line-height: 29px;
+	font-weight: 300;
+	letter-spacing: 0.5px;
+}
+
+
+/*=================
+General
+==================*/
+
+#about, #project, #team, #contact, footer{
+	background: #fff;
+}
+
+
+/*=================
+Menu
+==================*/
+
+.bg{
+	background: transparent;
+	transition: 0.2s ease;
+}
+.bg.scrolled{
+	background: #4dc47d;
+}
+
+.navbar .navbar-brand{
+	font-weight: normal;
+	font-size: 25px;
+	color: #ffffff;
+}
+.navbar .navbar-brand:hover{
+	background: transparent;
+	color: #ccc;
+}
+#navbarSupportedContent > ul > li:nth-child(n) > a{
+	font-weight: normal;
+	font-size: 14px;
+	letter-spacing: 0.5px;
+	padding: 0;
+	text-transform: uppercase;
+	transition: all-ease-in 0.4s;
+	color: #ffffff;
+}
+#navbarSupportedContent > ul > li:nth-child(n) > a:hover{
+	background: transparent;
+	color: #ccc;
+}
+#navbarSupportedContent > ul > li:nth-child(n) > a::after{
+	content: "";
+	display: block;
+	width: 0;
+	height: 2px;
+	background: transparent;
+	transition: width 0.3s ease, background-color 0.3s ease;
+}
+#navbarSupportedContent > ul > li:nth-child(n) > a:hover::after{
+	width: 60%;
+	background: #fff;
+	color: #fff;
+}
+.navbar button{
+	outline: none;
+	border: 1px solid #fff;
+}
+
+
+@media screen and (max-width: 780px) {
+	#navbarSupportedContent > ul > li:nth-child(n) > a{
+  	margin-top: 8px;
+  	font-size: 12px;
+	}
+  #navbarSupportedContent > ul > li:nth-child(n) > a:hover::after{
+  	margin-left:  auto;
+		width: 50%;
+	}
+}
+@media screen and (max-width: 992px) {
+	#navbarSupportedContent > ul > li:nth-child(n) > a{
+  	margin-top: 8px;
+	}
+  #navbarSupportedContent > ul > li:nth-child(n) > a:hover::after{
+  	margin-left:  auto;
+		width: 50%;
+	}
+}
+
+
+/*=================
+Home
+==================*/
+
+#home{
+	display: flex;
+	align-items: center;
+	height: 100vh;
+	position: relative;
+}
+#home video{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	min-height: 100%;
+	min-width: 100%;
+	height: auto;
+	width: auto;
+	transform: translate(-50%,-50%);
+	background-size: cover;
+	object-fit: cover;
+	box-sizing: border-box;
+	overflow: hidden;
+	z-index: -100;
+	transition: 1s opacity;
+}
+#home .overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.75);
+}
+#home h1{
+	color: #fff;
+	font-size: 6vw;
+	line-height: 1.2em;
+}
+#home p{
+	color: rgba(250, 250, 250, 0.7);
+}
+#home .home-text{
+	z-index: 99;
+}
+
+/*=================
+Buttons
+==================*/
+
+.section-btn{
+	margin: 32px 0 0 0;
+	padding: 0;
+}
+.section-btn a{
+	color: #fff;
+	font-weight: normal;
+	line-height: 45px;
+	perspective: 1000px;
+}
+.section-btn a span{
+	position: relative;
+	display: inline-block;
+	font-size: 18px;
+	font-weight: normal;
+	letter-spacing: 0.5px;
+	padding: 2px 27px;
+	background: #4dc47d;
+	border-radius: 1px;
+	transition: transform 0.3s;
+	transform-origin: 50% 0;
+	transform-style: preserve-3d;
+}
+.section-btn a span::before{
+	position: absolute;
+	top: 100%;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	color: #fff;
+	background: #000;
+	border-radius: 1px;
+	padding: 2px 27px;
+	transition: background 0.3s;
+	transform: rotateX(-90deg);
+	content: attr(data-hover);
+	transform-origin: 50% 0;
+}
+.section-btn a:hover span,
+.section-btn a:focus span{
+	transform: rotateX(90deg) translateY(-22px);
+}
+
+
+
+/*=================
+About
+==================*/
+
+#about h3{
+	font-size: 14px;
+	letter-spacing: 12px;
+	text-transform: uppercase;
+}
+
+
+/*=================
+project
+==================*/
+
+#project .project-item{
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 25px;
+	padding: 0;
+	vertical-align: middle;
+
+}
+#project .project-item .project-overlay{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.5);
+	opacity: 0;
+	transition: all ease-in-out 0.5s;
+}
+#project .project-item:hover .project-overlay{
+	opacity: 1;
+}
+#project .project-item .project-overlay .project-info{
+	padding: 12em 0;
+}
+.project-info h1{
+	color: #fff;
+	margin: 0;
+}
+.project-info h3{
+	color: #d9d9d9;
+	margin-top: 0;
+	font-size: 14px;
+	letter-spacing: 0.2px;
+}
+#project .project-item img{
+	transition: all ease-in-out 0.5s;
+}
+#project .project-item:hover img{
+	transform: scale(1.1);
+}
+
+
+/*=================
+team section
+==================*/
+
+.swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.swiper-slide .swipper-text h3{
+	font-weight: 200;
+}
+
+.swiper-slide .swipper-text h3 span{
+	font-weight: 600;
+}
+
+
+
+/*=================
+contact section
+==================*/
+
+#contact{
+	background: url(img/contact-bg.jpg) 50% 0 repeat-y fixed;
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+}
+#contact .form-control{
+	border: none;
+	box-shadow: none;
+	font-size: 18px;
+	font-weight: normal;
+	margin-bottom: 12px;
+}
+#contact .form-control:focus{
+	border-color: #d9d9d9;
+}
+#contact input{
+	height: 55px;
+	line-height: 45px;
+}
+
+
+/*=================
+footer section
+==================*/
+
+
+.social-icon li i{
+	color: #4dc47d;
+	font-size: 20px;
+}
+
+.social-icon li i:hover{
+	color: #ccc;
+}
